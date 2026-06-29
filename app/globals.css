@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 251 247 240; /* cream */
+  --fg: 42 38 34; /* ink */
+  --surface: 255 255 255; /* white cards */
+  --sheet: 251 247 240; /* sheet surface */
+}
+
+.dark {
+  --bg: 0 0 0; /* black */
+  --fg: 237 235 230; /* warm off-white */
+  --surface: 24 24 27; /* elevated card */
+  --sheet: 18 18 20; /* sheet, just above black */
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
